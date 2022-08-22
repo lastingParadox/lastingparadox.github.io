@@ -1,5 +1,13 @@
+* {
+    --main-bg-color: #63dbc9;
+    --accent-nav: #1C7A6C;
+    --accent-muted: #0D3B34;
+    --item-box: #2BBAA5;
+    --button-border: #14695c;
+}
+
 body {
-    background-color: #63dbc9;
+    background-color: var(--main-bg-color);
 }
 
 h2 {
@@ -8,7 +16,7 @@ h2 {
 }
 
 .text-muted {
-    color: #0D3B34 !important;
+    color: var(--accent-muted) !important;
 }
 
 header {
@@ -16,7 +24,7 @@ header {
 }
 
 .navbar {
-    background-color: #1C7A6C;
+    background-color: var(--accent-nav);
 }
 
 .section {
@@ -24,7 +32,7 @@ header {
 }
 
 .section hr {
-    border-top: 1em dotted #1C7A6C;
+    border-top: 1em dotted var(--accent-nav);
     width: 15%;
     margin: auto;
 }
@@ -33,7 +41,7 @@ header {
     text-align: center;
     height: 1px;
     width: 64px;
-    background-color: #1C7A6C;
+    background-color: var(--accent-nav);
     margin: auto auto 10px;
 }
 
@@ -58,14 +66,14 @@ header {
     display: block;
     width: 50%;
     padding: 10px;
-    background-color: #2BBAA5;
+    background-color: var(--item-box);
     margin: 10px auto;
 }
 
 .spacer {
     height: 8px;
     width: 8px;
-    background-color: #0D3B34;
+    background-color: var(--accent-muted);
     border-radius: 50%;
     display: inline-block;
     margin: 0 7px 2px 10px;
@@ -83,7 +91,7 @@ header {
     overflow: hidden;
     text-align: center;
     border-radius: 5px;
-    background-color: #2BBAA5;
+    background-color: var(--item-box);
     padding: 10px;
     margin: 10px;
     flex: 1 1 auto;
@@ -103,11 +111,16 @@ header {
 }
 
 .btn-primary {
-    background-color: #1C7A6C;
-    border-color: #14695c;
+    background-color: var(--accent-nav);
+    border-color: var(--button-border)
+}
+
+.btn-primary:hover {
+    background-color: #085c4f;
+    border-color: #04352d;
 }
 
 .disabled {
-    background-color: #1C7A6C;
-    border-color: #14695c;
+    background-color: var(--accent-nav);
+    border-color: var(--button-border)
 }
