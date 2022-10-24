@@ -10,10 +10,11 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- Override CSS -->
+    <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="mint.css">
     <script>
         function toggleTheme() {
-            let theme = document.getElementsByTagName('link')[1]
+            let theme = document.getElementsByTagName('link')[2]
 
             if (theme.getAttribute('href') == 'mint.css')
                 theme.setAttribute('href', 'pink.css')
@@ -125,7 +126,12 @@
             <div class="experienceitem">
                 <h3>B.S. Computer Science</h3>
                 <h4><i><small class="text-muted">August 2022 - Current</small></i><span class="spacer"></span><i><small class="text-muted">University of Central Florida</small></i></h4>
-                <p>This is a description of what I did/do.</p>
+                <ul>
+                    <li>Data Structures and Algorithms I, II</li>
+                    <li>Object-Oriented Programming</li>
+                    <li>Systems Software</li>
+                    <li>Algorithms for Machine Learning</li>
+                </ul>
             </div>
             <hr/>
         </div>
@@ -136,14 +142,14 @@
             <div id="projectbox">
                 <div class="projectitem">
                     <h3>DiceParser</h3>
-                    <p>A Node package built to parse dice roll expressions from strings.</p>
+                    <p>A Node package built to parse and roll dice expressions from strings.</p>
                     <a href="https://nodejs.org/en/"><img class="invert" src="assets/node.svg" alt="Node.js Logo"/></a>
-                    <a href="https://www.npmjs.com/package/vortox-dice-parser"><img src="assets/npm.svg" alt="npm Logo"/></a>
+                    <a href="https://www.npmjs.com/package/vortox-dice-parser"><img class="revert" src="assets/npm.svg" alt="npm Logo"/></a>
                     <a class="btn btn-primary" href="https://github.com/lastingParadox/dice-roller" role="button">Repo Link</a>
                 </div>
                 <div class="projectitem">
                     <h3>VortoxBot</h3>
-                    <p>A bot for Discord with tabletop applications, MongoDB use for character details.</p>
+                    <p>A bot for Discord with tabletop applications, MongoDB use for CRUD operations on data.</p>
                     <a href="https://nodejs.org/en/"><img class="invert" src="assets/node.svg" alt="Node.js logo"/></a>
                     <a href="https://www.mongodb.com/"><img class="invert" src="assets/mongodb.svg" alt="MongoDB Logo"/></a>
                     <a class="btn btn-primary" href="https://github.com/lastingParadox/vortox-bot" role="button">Repo Link</a>
@@ -151,13 +157,13 @@
                 <div class="projectitem">
                     <h3>VortoxLifesteal</h3>
                     <p>A Bukkit plugin for Minecraft that makes players lose maximum health with each death.</p>
-                    <a href="https://www.java.com/en/"><img src="assets/java.svg" alt="Java logo"/></a>
+                    <a href="https://www.java.com/en/"><img class="revert" src="assets/java.svg" alt="Java logo"/></a>
                     <a class="btn btn-primary" href="https://github.com/lastingParadox/vortox-lifesteal" role="button">Repo Link</a>
                 </div>
                 <div class="projectitem">
                     <h3>LiarsDice</h3>
                     <p>A local browser game mimicking Perudo, or liar's dice. Made for KnightHacks 2021.</p>
-                    <a href="https://www.javascript.com/"><img src="assets/js.svg" alt="JS Logo"/></a>
+                    <a href="https://www.javascript.com/"><img class="revert" src="assets/js.svg" alt="JS Logo"/></a>
                     <a class="btn btn-primary" href="https://github.com/lastingParadox/liars-dice-browser-game" role="button">Repo Link</a>
                 </div>
             </div>
