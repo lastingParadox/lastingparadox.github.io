@@ -1,35 +1,28 @@
 body {
     background-color: var(--main-bg-color);
 }
-
 h2 {
     text-align: center;
     margin: 0;
 }
-
 .text-muted {
     color: var(--accent-muted) !important;
 }
-
 .section {
     margin: 2vh 5% 4vh 5%;
 }
-
 header {
     margin: 7vh auto 4vh;
     width: 75%;
 }
-
 .navbar {
     background-color: var(--accent-nav);
 }
-
 .section hr {
     border-top: 1em dotted var(--accent-nav);
     width: 15%;
     margin: auto;
 }
-
 .underline {
     text-align: center;
     height: 1px;
@@ -37,7 +30,6 @@ header {
     background-color: var(--accent-nav);
     margin: auto auto 10px;
 }
-
 .aboutflex {
     margin: 5vh auto;
     display: flex;
@@ -45,22 +37,18 @@ header {
     flex-flow: row wrap;
     width: 75%;
 }
-
 .aboutheader {
     text-align: center;
     min-width: 200px;
     flex: 1 1 auto;
 }
-
 .aboutheader h2 {
     font-size: calc(1.5em + .5vw);
 }
-
 .aboutpara {
     flex: 2 1 auto;
     max-width: 70%;
 }
-
 .experienceitem {
     display: block;
     width: 75%;
@@ -68,7 +56,6 @@ header {
     background-color: var(--item-box);
     margin: 10px auto;
 }
-
 .spacer {
     height: 8px;
     width: 8px;
@@ -77,7 +64,6 @@ header {
     display: inline-block;
     margin: 0 7px 2px 10px;
 }
-
 #projectbox {
     display: flex;
     flex-flow: row wrap;
@@ -85,39 +71,42 @@ header {
     justify-content: center;
     margin-bottom: 2vh;
 }
-
 .projectitem {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     overflow: hidden;
     text-align: center;
     border-radius: 5px;
     background-color: var(--item-box);
     padding: 10px;
     margin: 10px;
-    flex: 1 1 auto;
     max-width: 13em;
     height: 16em
 }
-
-.projectitem h3 {
+.item-info {
+    margin-bottom: auto;
+}
+.item-info h3 {
     font-size: calc(1.2em + .5vw);
 }
-
-.projectitem p {
+.item-info p {
     margin: auto auto 10px;
 }
-
-.projectitem img {
+.item-link {
+    width: 100%;
+    margin-top: auto;
+}
+.item-link img {
     display: inline-block;
     margin: 5px auto 10px;
     filter: contrast(100) brightness(1) grayscale(1);
     height: 32px;
     width: 32px;
 }
-
-.projectitem .invert {
+.item-link .invert {
     filter: invert() contrast(100) brightness(1) grayscale(1);
 }
-
 .btn-primary {
     margin: auto;
     display: block;
@@ -125,22 +114,18 @@ header {
     background-color: var(--accent-nav);
     border-color: var(--button-border)
 }
-
 .btn-primary:hover {
     background-color: var(--button-back);
     border-color: var(--button-hover);
 }
-
 .btn-secondary {
     background-color: var(--accent-nav);
     border-color: var(--button-border)
 }
-
 .btn-secondary:hover {
     background-color: var(--button-back);
     border-color: var(--button-hover);
 }
-
 .disabled {
     background-color: var(--accent-nav);
     border-color: var(--button-border)

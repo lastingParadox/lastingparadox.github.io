@@ -7,23 +7,18 @@
     --button-back: #5c0847;
     --button-hover: #350429;
 }
-
 .experienceitem {
     color: white;
 }
-
 .experienceitem .text-muted {
     color: #ffe0eb !important;
 }
-
 .projectitem {
     color: white
 }
-
 .projectitem .invert {
     filter: contrast(100) brightness(1) grayscale(1);
 }
-
 .projectitem .revert {
     filter: invert() contrast(100) brightness(1) grayscale(1);
 }
