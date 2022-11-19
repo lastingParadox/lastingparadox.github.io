@@ -1,6 +1,12 @@
 body {
     background-color: var(--main-bg-color);
 }
+a {
+    color: var(--button-border)
+}
+a:hover {
+    color: var(--button-hover)
+}
 h2 {
     text-align: center;
     margin: 0;
