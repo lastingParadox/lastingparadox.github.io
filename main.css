@@ -53,6 +53,7 @@ header {
 }
 .aboutpara {
     flex: 2 1 auto;
+    padding-top: 1vh;
     max-width: 70%;
 }
 .experienceitem {
@@ -135,4 +136,26 @@ header {
 .disabled {
     background-color: var(--accent-nav);
     border-color: var(--button-border)
+}
+
+.iframe-item {
+    display: block;
+    width: 75%;
+    padding: 20px;
+    background-color: var(--item-box);
+    margin: 10px auto;
+}
+
+.iframe-wrapper {
+    position: relative;
+}
+
+.iframe-wrapper iframe {
+    width: 100%;
+    height: 95vh;
+}
+
+.iframe-wrapper video {
+    width: 100%;
+    height: 85vh;
 }
