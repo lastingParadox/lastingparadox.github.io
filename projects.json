@@ -1,0 +1,58 @@
+{
+    "projects": [
+        {
+            "name": "Dice Parser",
+            "description": "A Node package built to parse and roll dice expressions from strings.",
+            "link": "https://github.com/lastingParadox/dice-parser",
+            "software_used": ["node", "npm"]
+        },
+        {
+            "name": "Vortox",
+            "description": "A Discord bot for tabletop applications, uses MongoDB for CRUD operations on data.",
+            "link": "https://github.com/lastingParadox/vortox-bot",
+            "software_used": ["node", "discord-js", "mongo"]
+        },
+        {
+            "name": "VortoxLifesteal",
+            "description": "A Minecraft Bukkit plugin that makes players lose maximum health with each death.",
+            "link": "https://github.com/lastingParadox/vortox-lifesteal",
+            "software_used": ["maven", "bukkit"]
+        },
+        {
+            "name": "Liar's Dice",
+            "description": "A local browser game mimicking Perudo, or liar's dice. Made for KnightHacks 2021.",
+            "link": "https://github.com/lastingParadox/liars-dice",
+            "software_used": ["js", "html"]
+        },
+        {
+            "name": "Liar's Dice",
+            "description": "A local browser game mimicking Perudo, or liar's dice. Made for KnightHacks 2021.",
+            "link": "https://github.com/lastingParadox/liars-dice",
+            "software_used": ["js", "html"]
+        },
+        {
+            "name": "To Do Machine",
+            "description": "A JavaFX GUI Application that can take in, modify, and export a To Do List.",
+            "link": "https://github.com/lastingParadox/To-Do-Machine",
+            "software_used": ["gradle", "javafx", "html"]
+        },
+        {
+            "name": "Inventory Manager",
+            "description": "A JavaFX GUI Application that can take in, modify, and export an Stock list.",
+            "link": "https://github.com/lastingParadox/inventory-manager",
+            "software_used": ["gradle", "javafx", "html"]
+        },
+        {
+            "name": "Contact Storage",
+            "description": "A LAMP stack website that can use CRUD operations on a user's contacts.",
+            "link": "https://github.com/lastingParadox/cop4331-contactstorage",
+            "software_used": ["apache", "mysql", "php"]
+        },
+        {
+            "name": "Portfolio",
+            "description": "This website, made using Bootstrap and base JS.",
+            "link": "https://github.com/lastingParadox/lastingparadox.github.io",
+            "software_used": ["bootstrap", "js", "html"]
+        }
+    ]
+}

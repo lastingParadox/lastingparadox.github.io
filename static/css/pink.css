@@ -1,0 +1,24 @@
+* {
+    --main-bg-color: #d896c8;
+    --accent-nav: #72275f;
+    --accent-muted: #6e0342;
+    --item-box: #b42f93;
+    --button-border: #691454;
+    --button-back: #5c0847;
+    --button-hover: #350429;
+}
+.experienceitem {
+    color: white;
+}
+.experienceitem .text-muted {
+    color: #ffe0eb !important;
+}
+.projectitem {
+    color: white
+}
+.projectitem .invert {
+    filter: contrast(100) brightness(1) grayscale(1);
+}
+.projectitem .revert {
+    filter: invert() contrast(100) brightness(1) grayscale(1);
+}
