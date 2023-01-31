@@ -77,6 +77,8 @@ header {
     align-items: center;
     justify-content: center;
     margin-bottom: 2vh;
+    width: 75%;
+    margin: auto;
 }
 .projectitem {
     display: flex;
@@ -100,20 +102,29 @@ header {
 .item-info p {
     margin: auto auto 10px;
 }
-.item-link {
+.item-source {
     width: 100%;
     margin-top: auto;
 }
-.item-link img {
+.item-source img {
     display: inline-block;
-    margin: 5px auto 10px;
-    filter: contrast(100) brightness(1) grayscale(1);
     height: 32px;
     width: 32px;
 }
-.item-link .invert {
-    filter: invert() contrast(100) brightness(1) grayscale(1);
+
+.item-img-box {
+    margin: 0px auto 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
+
+.item-img-box img {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+}
+
 .btn-primary {
     margin: auto;
     display: block;

@@ -7,35 +7,47 @@ function toggleTheme() {
         theme.setAttribute('href', 'static/css/mint.css')
 }
 
-addEventListener('DOMContentLoaded', (event) => {
+addEventListener('DOMContentLoaded', async (event) => {
+    console.log(event);
     let box = document.getElementById('projectbox');
-    let json = fetch("../../projects.json").then(response => response.json());
-    for (let project in json) {
+    console.log(box);
+    let response = await fetch("static/json/projects.json");
+    let json = await response.json(); 
+    console.log(json)
+    for (let project of json.projects) {
+        console.log(project);
         box.innerHTML += `
         <div class="projectitem">
             <div class="item-info">
-                <h3>${json[project].name}</h3>
-                <p>${json[project].description}</p>
+                <h3>${project.name}</h3>
+                <p>${project.description}</p>
             </div>
-            <div class="item-link">
-                ${getImages(json[project].software_used)}
-                <a class="btn btn-primary" href="${json[project].link}" role="button">Repo Link</a>
+            <div class="item-source">
+                <div class="item-img-box">
+                    ${await getImages(project.software_used)}
+                </div>
+                <a class="btn btn-primary" href="${project.link}" role="button">Repo Link</a>
             </div>
         </div>
         `
     }
 })
 
-function getImages(array) {
+async function getImages(array) {
     let imageString = "";
-    for (let name in array) {
-        let temp = new File(`../svg/${name}.svg`);
-        if (temp.exists()) {
-            imageString += `<a href=""><img class="invert" src="static/svg/${name}.svg" alt="${name} Logo"/></a>`
-        }
-        else {
-            imageString += `<img class="invert" src="static/svg/unknown.svg" alt="Question Mark"/>`
-        }
+    for (let name of array) {
+        await fetch(`static/svg/${name}.svg`, { method: "HEAD" })
+            .then(response => {
+                if (response.ok) {
+                    imageString += `<a href=""><img class="${name}" src="static/svg/${name}.svg" alt="${name} Logo"/></a>`
+                }
+                else {
+                    imageString += `<img class="invert" src="static/svg/unknown.svg" alt="Question Mark"/>`
+                }
+            })
+        .catch(error => {
+            console.log(error);
+        });
     }
     return imageString;
 }

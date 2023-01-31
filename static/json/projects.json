@@ -25,12 +25,6 @@
             "software_used": ["js", "html"]
         },
         {
-            "name": "Liar's Dice",
-            "description": "A local browser game mimicking Perudo, or liar's dice. Made for KnightHacks 2021.",
-            "link": "https://github.com/lastingParadox/liars-dice",
-            "software_used": ["js", "html"]
-        },
-        {
             "name": "To Do Machine",
             "description": "A JavaFX GUI Application that can take in, modify, and export a To Do List.",
             "link": "https://github.com/lastingParadox/To-Do-Machine",
