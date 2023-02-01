@@ -8,14 +8,10 @@ function toggleTheme() {
 }
 
 addEventListener('DOMContentLoaded', async (event) => {
-    console.log(event);
     let box = document.getElementById('projectbox');
-    console.log(box);
     let response = await fetch("static/json/projects.json");
-    let json = await response.json(); 
-    console.log(json)
+    let json = await response.json();
     for (let project of json.projects) {
-        console.log(project);
         box.innerHTML += `
         <div class="projectitem">
             <div class="item-info">
@@ -33,21 +29,15 @@ addEventListener('DOMContentLoaded', async (event) => {
     }
 })
 
-async function getImages(array) {
+function getImages(array) {
     let imageString = "";
     for (let name of array) {
-        await fetch(`static/svg/${name}.svg`, { method: "HEAD" })
-            .then(response => {
-                if (response.ok) {
-                    imageString += `<a href=""><img class="${name}" src="static/svg/${name}.svg" alt="${name} Logo"/></a>`
-                }
-                else {
-                    imageString += `<img class="invert" src="static/svg/unknown.svg" alt="Question Mark"/>`
-                }
-            })
-        .catch(error => {
-            console.log(error);
-        });
+        imageString += `<a href=""><img class="${name}" src="static/svg/${name}.svg" alt="${name} Logo" onerror="imgError(this);"/></a>`
     }
     return imageString;
+}
+
+function imgError(that) {
+    that.onerror = null;
+    that.src = "static/svg/unknown.svg";
 }
