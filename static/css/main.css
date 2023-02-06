@@ -2,10 +2,10 @@ body {
     background-color: var(--main-bg-color);
 }
 a {
-    color: var(--button-border)
+    color: #145a50;
 }
 a:hover {
-    color: var(--button-hover)
+    color: #061b18
 }
 h2 {
     text-align: center;
