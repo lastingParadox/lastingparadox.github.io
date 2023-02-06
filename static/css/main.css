@@ -2,10 +2,10 @@ body {
     background-color: var(--main-bg-color);
 }
 a {
-    color: #145a50;
+    color: var(--link);
 }
 a:hover {
-    color: #061b18
+    color: var(--link-hover);
 }
 h2 {
     text-align: center;
