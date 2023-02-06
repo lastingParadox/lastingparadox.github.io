@@ -97,7 +97,14 @@ header {
     margin-bottom: auto;
 }
 .item-info h3 {
-    font-size: calc(1.2em + .5vw);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    display: block;
+    line-height: 1em;
+    font-size: 1.5em;
+    max-height: 1em;
+    max-width: 100%;
 }
 .item-info p {
     margin: auto auto 10px;
@@ -169,4 +176,8 @@ header {
 .iframe-wrapper video {
     width: 100%;
     height: 85vh;
+}
+
+.bootstrap {
+    color: green;
 }

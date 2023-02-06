@@ -32,7 +32,7 @@
         },
         {
             "name": "Inventory Manager",
-            "description": "A JavaFX GUI Application that can take in, modify, and export an Stock list.",
+            "description": "A JavaFX GUI Application that can take in, modify, and export a stock list.",
             "link": "https://github.com/lastingParadox/inventory-manager",
             "software_used": ["gradle", "javafx", "html"]
         },
